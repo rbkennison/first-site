@@ -3,6 +3,7 @@ Type out all of the commands I give you below and follow the steps. **Do not get
 
 
 ### 1. Open Command Prompt(PC) or Terminal(Mac)
+
 ### 2. Run this command to see what folders/files you already have 
 Get in the habit of doing this often.
 
@@ -26,7 +27,7 @@ You can see that the folder "dev" that you just created is visible and created.
 You can name this whatever you want, just make sure it follows these naming rules:
 1. The name always has to start with a lower case letter and **never** a number.
 2. If the name is more than one word the words can be seperated by a a dash(-) or following the (n)ew(F)older naming style(example: helloWorld, newSite, firstSite, myFirstWebsite, hello-world, new-site, my-first-website).
-···The most common is probably the newFolder naming style.
+__The most common is probably the newFolder naming style.__
 
 ```mkdir yourFolderName```
 
@@ -62,7 +63,8 @@ Running this command will open them in your IDE(text editor).
 ```code .```
 
 __You don't really need the folder and files open in your computer's main folder organizer so you can go ahead and close that, I just wanted you to see that you can open it through Command Prompt or Terminal.__
-### . Now that your files are opened in VS Code, create your HTML boilerplate in your HTML file.
+
+### 12. Now that your files are opened in VS Code, create your HTML boilerplate in your HTML file.
 
 ```
 <!DOCTYPE html>
@@ -82,7 +84,7 @@ __You don't really need the folder and files open in your computer's main folder
 </html>
 ```
 
-### . Add a Title, Header, Photo, Paragraph (using lorem), and a Link in your HTML file.
+### 13. Add a Title, Header, Photo, Paragraph (using lorem), and a Link in your HTML file.
 
 ```
 <!DOCTYPE html>
@@ -98,15 +100,22 @@ __You don't really need the folder and files open in your computer's main folder
     <h1>My First Site</h1>
     <!--Feel free to edit the text of the header inside of the header tags.-->
     <h4>Created by firstName lastName.</h4>
-    <img src="" alt="">
-    <!--this is where your paragraph will go.-->
-    <p></p>
-    <!--this is where your link will go.-->
+    <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/83268935_10212714463014695_726989335869521920_n.jpg?_nc_cat=101&_nc_oc=AQnPegnf1FElhMoaybjLfaV5ymTMkf16FzMuICyM1DplEYU1qAv4SRLjzsu7U4yzotqpfnrwRYgQSgL8Eoz0ZeNP&_nc_ht=scontent-ort2-1.xx&oh=eb91e289e1fb452907e7196ac52bfada&oe=5ED2B8AA" alt="">
+    <!--the 'alt' attribute is used for when the image doesn't load and still allows the user to know what the photo would have been. This is also used for if the user is blind and is using a website reader to read to them. You always have to include an 'alt' attribute but you can leave it blank. The image tag <img> won't work without the 'alt' attribute. -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!--'Lorem' is example text to fill in paragraphs. It is used a lot in coding so that you can fill and style a paragraph without having to spend the time writing your own paragraphs. There are lorem generators like this https://loremipsum.io/ -->
+    <!--example hyperlink tag<a href="url">link text</a>-->
+    <!--hyperlink tags will redirect the current tab. If you want the link to open in a seperate tag add target="_blank" inside of your <a> tag.-->
+    <a href="https://www.facebook.com/reid.kennison" target="_blank">My Facebook Profile</a>
   </body>
 </html>
 ```
 
-### . Link your CSS file in your HTML.
-### . In your CSS file, add this styling. 
+### 14. Link your CSS file in your HTML.
+Add this code on the line right before your closing </head> tag. This will link your CSS file to your HTML file.
+
+```<link rel="stylesheet" href="style.css">```
+
+### 15. In your CSS file, add this styling. 
 
 
