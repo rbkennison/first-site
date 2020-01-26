@@ -110,12 +110,17 @@ __You don't really need the folder and files open in your computer's main folder
   </body>
 </html>
 ```
+### 14. Open your new site in your browser through Command Prompt or Terminal.
+Make sure your default broswer is set to Chrome.
 
-### 14. Link your CSS file in your HTML.
+```open index.html```
+
+### 15. Link your CSS file in your HTML.
 Add this code on the line right before your closing </head> tag. This will link your CSS file to your HTML file.
 
 ```<link rel="stylesheet" href="style.css">```
 
-### 15. In your CSS file, add this styling. 
+### 16. In your CSS file, add this styling. 
 
-
+### 17. Refresh your website in Chrome.
+You should see the styling changes made to your website!
