@@ -90,24 +90,32 @@ __You don't really need the folder and files open in your computer's main folder
 <!DOCTYPE html>
 <html>
 <!--the 'head' of an HTML file will never be seen when you open the browser. Note that this is different than a 'header' which will be seen! The 'header' will live inside the body-->
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-    <!--This is a comment tag. You can add comments anywhere in your code by using the these symbols on each end. -->
-    <!--The title can be named whatever you want. Go ahead and change that! It will usually be titled whatever you titled your folder for this site. It doesn't have to follow the naming style so feel free to type it out normally (example: My First Site).-->
-  </head>
-  <body>
-    <h1>My First Site</h1>
-    <!--Feel free to edit the text of the header inside of the header tags.-->
-    <h4>Created by firstName lastName.</h4>
-    <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/83268935_10212714463014695_726989335869521920_n.jpg?_nc_cat=101&_nc_oc=AQnPegnf1FElhMoaybjLfaV5ymTMkf16FzMuICyM1DplEYU1qAv4SRLjzsu7U4yzotqpfnrwRYgQSgL8Eoz0ZeNP&_nc_ht=scontent-ort2-1.xx&oh=eb91e289e1fb452907e7196ac52bfada&oe=5ED2B8AA" alt="">
-    <!--the 'alt' attribute is used for when the image doesn't load and still allows the user to know what the photo would have been. This is also used for if the user is blind and is using a website reader to read to them. You always have to include an 'alt' attribute but you can leave it blank. The image tag <img> won't work without the 'alt' attribute. -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <!--'Lorem' is example text to fill in paragraphs. It is used a lot in coding so that you can fill and style a paragraph without having to spend the time writing your own paragraphs. There are lorem generators like this https://loremipsum.io/ -->
-    <!--example hyperlink tag<a href="url">link text</a>-->
-    <!--hyperlink tags will redirect the current tab. If you want the link to open in a seperate tag add target="_blank" inside of your <a> tag.-->
-    <a href="https://www.facebook.com/reid.kennison" target="_blank">My Facebook Profile</a>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <!--This is a comment tag. You can add comments anywhere in your code by using the these symbols on each end. -->
+  <!--The title can be named whatever you want. Go ahead and change that! It will usually be titled whatever you titled your folder for this site. It doesn't have to follow the naming style so feel free to type it out normally (example: My First Site).-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <div class='navigation'>
+      <h1>My First Site</h1>
+      <!--Feel free to edit the text of the header inside of the header tags.-->
+      <h4>Created by firstName lastName</h4>
+    </div>
+    <div class="card d-flex align-items-center justify-content-center" style="width: 45rem;">
+      <img class="card-img-top" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/83268935_10212714463014695_726989335869521920_n.jpg?_nc_cat=101&_nc_oc=AQnPegnf1FElhMoaybjLfaV5ymTMkf16FzMuICyM1DplEYU1qAv4SRLjzsu7U4yzotqpfnrwRYgQSgL8Eoz0ZeNP&_nc_ht=scontent-ort2-1.xx&oh=eb91e289e1fb452907e7196ac52bfada&oe=5ED2B8AA" alt="">
+      <!--the 'alt' attribute is used for when the image doesn't load and still allows the user to know what the photo would have been. This is also used for if the user is blind and is using a website reader to read to them. You always have to include an 'alt' attribute but you can leave it blank. The image tag <img> won't work without the 'alt' attribute. -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!--'Lorem' is example text to fill in paragraphs. It is used a lot in coding so that you can fill and style a paragraph without having to spend the time writing your own paragraphs. There are lorem generators like this https://loremipsum.io/ -->
+      <!--example hyperlink tag<a href="url">link text</a>-->
+      <!--hyperlink tags will redirect the current tab. If you want the link to open in a seperate tag add target="_blank" inside of your <a> tag.-->
+      <a href="https://www.facebook.com/reid.kennison" class="btn btn-primary" target="_blank">My Facebook Profile</a>
+    </div>
+  </div>
+</body>
 </html>
 ```
 ### 14. Open your new site in your browser through Command Prompt or Terminal.
@@ -121,6 +129,26 @@ Add this code on the line right before your closing </head> tag. This will link 
 ```<link rel="stylesheet" href="style.css">```
 
 ### 16. In your CSS file, add this styling. 
+
+```
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+body > div > .card {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.card > p {
+    padding: 20px;
+}
+```
 
 ### 17. Refresh your website in Chrome.
 You should see the styling changes made to your website!
